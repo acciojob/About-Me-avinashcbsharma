@@ -1,1 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+           
+}
+#main{
+    margin: auto;
+    display: flex;
+    background-color:#f6f6f6;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;    
+}
+.ainer{
+    
+    margin: 1rem;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height:80%;
+    width: 80%;
+    box-shadow: 1px 2px 5px #c3bdbd;
+    background-color: #ffff;       
+}
+.both{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: #ffff; */
+    padding: 10px;
+    gap:5%;
+}   
+.aboutme{        
+    text-align:justify;
+    padding: 10px;
+} 
+.ProfileSec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bdr{
+    border: 1px solid blue;
+}
+.w48{
+    width:49%;
+    height: 98%;
+    padding-top: 10px;            
+}
+.w100{
+    width: 100%;
+}
+.fntfamly{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+fnt18{
+    font-size: 18px;
+}
+.fnt24{
+    font-size: 24px;
+    font-weight: 700;
+}
+img{border: 1px solid black;}
+.lnht{
+    line-height: 2rem;
+}
+/* Graphical bars  */
 
+.graph{
+    display: flex;
+    flex-direction: column;
+    width:99%;
+    height: 200px;
+    padding: 5px;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 1px;
+    width:100%;
+}
+.bar{
+    
+    width:100%;
+    height: 8px;
+    background-color: lightblue;
+    border-radius: 15px;
+    align-items: -24px;
+}
+.p95{max-width: 95%;}
+.p90{max-width: 90%;}
+.p99{max-width: 99%;}
+.p93{max-width: 93%;}
+.per{
+    height: 8px;    
+    background-color: royalblue;
+    padding:1px;
+    border-radius: 5px;
+    position: relative;
+}
+.per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 3px 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 11px;
+    top:-30px;
+    right: 0;
+    transform: translateX(50%);
+}
+.per::after{
+    content: "";
+    position: absolute;
+    background-color: #f1f1f1;
+    height: 9px;
+    width: 9px;
+    top:-15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+}
